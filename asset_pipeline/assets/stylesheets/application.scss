@@ -1,0 +1,142 @@
+.tout {
+  font-size: 25px;
+  position: fixed;
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  a {
+    display: inline-block;
+
+    width: 25px;
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: #666;
+    }    
+  }
+  background: #333;
+  border: 1px solid #333;
+  border-top-left-radius: 5px;
+}
+.lrpad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tbpad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+$width: 300px;
+.content {
+  margin-left: $width + 5;
+}
+.issue {
+  section.issue {
+    .body {
+      border: 1px solid #C4C4C4;
+      padding: 10px 10px 0;
+      margin-left: 10px;
+    }
+  }
+  .header {
+    .title {
+      padding-top: 15px;
+    }
+    .labels {
+      margin-top: 5px;
+      .label {
+        margin-right: 5px;
+      }
+    } 
+    .state {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      span {
+        border-radius: 5px;
+        display: inline-block;
+        color: white;
+        padding: 10px 20px;
+      }
+      .open {
+        background: #6CC644;
+      }
+      .closed {
+        background: #BD2C00;
+      }
+    }
+  } 
+  .comments {
+    .comment {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      .body {
+        margin-left: 10px;
+      }
+    }    
+  }
+}
+.sidebar {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $width;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  border-left: 5px solid #333;
+  border-right: 1px solid #BBB;
+  box-shadow: 0 0 5px #CCC;
+  -webkit-box-shadow: 0 0 5px #CCC;
+  -moz-box-shadow: 0 0 5px #ccc;
+  .item {
+    cursor: default;
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #eee;
+    &.selected {
+      background: #EEE;
+      border: 1px solid #C4C4C4;
+    }
+    .body {
+      color: #9697a0;
+    }
+    &.more {
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+      width: $width;
+      padding: 0;
+      border-radius: 0;
+      margin-left: -5px;
+    }
+    .number {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: #4581c4;
+    }
+    img.avatar {
+      height: 40px;
+      width: 40px;
+      border: 1px solid #eee;
+      float: left;
+      margin-right: 5px;
+      border-radius: 8px;
+    }
+    .labels {
+      margin-top: 5px;
+      .label {
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+!!!  
+%html  
+  %head  
+    %title
+      Github Issues - Backbone
+    %script{:src  => "http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+    %script{:src  => "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js"}
+    %script{:src  => "http://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.0/underscore.string.min.js"}
+    :javascript
+      _.mixin(_.str.exports())
+    %script{:src  => "http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"}   
+    %script{:src  => "/js/application.js"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/bootstrap.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/application.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/font-awesome.css"}
+  %body{:onload => "App.initialize()"}
+    #app
+      .tout
+        %a{:href=>"http://twitter.com/himrc", :target=>"_blank"}
+          %i.icon-twitter.himrc
+        %a{:href=>"http://facebook.com/himrc", :target=>"_blank"}
+          %i.icon-facebook-sign
+        %a{:href=>"http://linkedin.himrc.com", :target=>"_blank"}
+          %i.icon-linkedin-sign
+      .sidebar
+        .items
+        .item.more.btn
+          %strong
+            Load More
+      .content
+        =yield

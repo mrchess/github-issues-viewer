@@ -1,0 +1,6 @@
+%p
+  %strong
+    =@user.login
+  says:
+%p.body
+  != App.TemplateHelpers.comment(@body)

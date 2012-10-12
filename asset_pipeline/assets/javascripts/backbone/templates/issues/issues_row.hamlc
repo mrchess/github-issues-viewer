@@ -1,0 +1,16 @@
+%span.number
+  = "##{@number}"
+.info
+  %img.avatar{:src=> @user.avatar_url}
+  .user
+    %h4
+      = @user.login
+  .title
+    = _.truncate(@title, 30)
+  .clearfix
+.body
+  = _.truncate(@body, 70)
+.labels
+  - for label in @labels
+    %span.label{:style=>"background-color: ##{label.color}"}
+      = label.name

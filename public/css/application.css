@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+*/
+.tout {
+  font-size: 25px;
+  position: fixed;
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  background: #333;
+  border: 1px solid #333;
+  border-top-left-radius: 5px; }
+  .tout a {
+    display: inline-block;
+    width: 25px;
+    color: white; }
+    .tout a:hover {
+      text-decoration: none;
+      color: #666; }
+
+.lrpad {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.tbpad {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.content {
+  margin-left: 305px; }
+
+.issue section.issue .body {
+  border: 1px solid #C4C4C4;
+  padding: 10px 10px 0;
+  margin-left: 10px; }
+.issue .header .title {
+  padding-top: 15px; }
+.issue .header .labels {
+  margin-top: 5px; }
+  .issue .header .labels .label {
+    margin-right: 5px; }
+.issue .header .state {
+  position: absolute;
+  top: 10px;
+  right: 30px; }
+  .issue .header .state span {
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px; }
+  .issue .header .state .open {
+    background: #6CC644; }
+  .issue .header .state .closed {
+    background: #BD2C00; }
+.issue .comments .comment {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee; }
+  .issue .comments .comment .body {
+    margin-left: 10px; }
+
+.sidebar {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  border-left: 5px solid #333;
+  border-right: 1px solid #BBB;
+  box-shadow: 0 0 5px #CCC;
+  -webkit-box-shadow: 0 0 5px #CCC;
+  -moz-box-shadow: 0 0 5px #ccc; }
+  .sidebar .item {
+    cursor: default;
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #eee; }
+    .sidebar .item.selected {
+      background: #EEE;
+      border: 1px solid #C4C4C4; }
+    .sidebar .item .body {
+      color: #9697a0; }
+    .sidebar .item.more {
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+      width: 300px;
+      padding: 0;
+      border-radius: 0;
+      margin-left: -5px; }
+    .sidebar .item .number {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: #4581c4; }
+    .sidebar .item img.avatar {
+      height: 40px;
+      width: 40px;
+      border: 1px solid #eee;
+      float: left;
+      margin-right: 5px;
+      border-radius: 8px; }
+    .sidebar .item .labels {
+      margin-top: 5px; }
+      .sidebar .item .labels .label {
+        margin-right: 5px; }

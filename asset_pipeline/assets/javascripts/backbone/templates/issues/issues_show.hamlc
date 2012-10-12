@@ -1,0 +1,29 @@
+.issue
+  .header.lrpad
+    .title
+      %h3
+        = @title
+        %small
+          = "##{@number}"
+
+    .labels
+      - for label in @labels
+        %span.label{:style=>"background-color: ##{label.color}"}
+          = label.name
+    .state
+      %h4
+        != App.TemplateHelpers.stateLabel(@state)
+  %hr
+  .lrpad
+    %section.issue
+      %strong
+        = @user.login
+      raised:
+      .body
+        %p
+          != App.TemplateHelpers.comment(@body)
+    %br
+    %section
+      %h3 
+        ="Comments (#{@comments})"
+      .comments
